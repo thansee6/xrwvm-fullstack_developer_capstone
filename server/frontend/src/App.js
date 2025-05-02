@@ -2,9 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Import your components
-//import LoginPanel from "./components/Login/Login";
-import RegistrationPanel from "./components/Register";
-//import LogoutPanel from "./components/Logout/Logout";
+import LoginPanel from "./components/Login/Login";
+import RegistrationPanel from "./components/Register/Register";
+import LogoutPanel from "./components/Logout/Logout";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Route path="/register" element={<RegistrationPanel />} />
 
       {/* Route for Logout */}
-      <Route path="/logout" element={<LogoutPanel />} />
+     <Route path="/logout" element={<LogoutPanel />} />
     </Routes>
   );
 }
